@@ -1,10 +1,11 @@
-import Clerk from '@clerk/clerk-sdk-node';
+import { clerkClient } from '@clerk/nextjs/server';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
   try {
-    const userListRaw = await Clerk.users.getUserList();
-    const userList = userListRaw.map((user: any) => ({
+    const clerk = await clerkClient();
+    const userListRaw = await clerk.users.getUserList();
+    const userList = userListRaw.data.map((user: any) => ({
       id: user.id,
       name:
         `${user.firstName || ''} ${user.lastName || ''}`.trim() ||
