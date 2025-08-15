@@ -33,3 +33,11 @@ export interface FooterItem {
 export type MainNavItem = NavItemWithOptionalChildren;
 
 export type SidebarNavItem = NavItemWithChildren;
+
+// Re-export traffic types
+export type {
+  TrafficIncident,
+  TrafficIncidentLocation,
+  TrafficIncidentFilters,
+  TrafficIncidentResponse
+} from './traffic';

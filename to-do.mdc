@@ -1,0 +1,66 @@
+---
+description: to do list step by step how agent should strucutre and build app
+alwaysApply: false
+---
+# Farkle App Game Development To-Do List
+
+> This checklist follows best practices for Next.js, React, ShadCN, and NextAuth.js. Each step is modular and incremental. Refer to @farkle.mdc for game logic planning. Check off each item as you complete it.
+
+
+## 4. Game Logic Planning
+- [ ] Review and document Farkle rules in @farkle.mdc
+- [ ] Design TypeScript types for game state, player, dice, and actions in `/libs/shared/types`
+- [ ] Plan API endpoints for game actions (start, roll, score, end turn)
+
+## 5. Firebase Integration & Real-time Multiplayer
+- [ ] Install Firebase dependencies (`pnpm add firebase`)
+- [ ] Set up Firebase configuration in `src/lib/firebase.ts`
+- [ ] Add Firebase environment variables to `.env.local`
+- [ ] Create Firestore data structure for lobbies and users
+- [ ] Design real-time hooks (`useFirebaseLobby`, `useFirebaseUsers`)
+- [ ] Integrate Clerk users with Firebase for user management
+- [ ] Update Farkle store to sync with Firebase real-time updates
+- [ ] Implement lobby presence system (online/offline status)
+
+## 6. Core Game Features
+- [ ] Implement lobby creation/joining UI with Firebase integration
+- [ ] Build real-time game room with Firebase listeners
+- [ ] Integrate Farkle game logic from @farkle.mdc into Firebase
+- [ ] Create React components for dice, score sheet, and player actions
+- [ ] Add Firebase-based state management for game state
+- [ ] Implement real-time game state synchronization across players
+
+## 7. Testing & Quality
+- [ ] Write unit tests for game logic and components (co-located with code)
+- [ ] Add integration tests for Firebase operations
+- [ ] Ensure type safety throughout (strict TypeScript)
+- [ ] Test real-time multiplayer functionality
+
+## 8. Deployment & Optimization
+- [ ] Set up Firebase production environment
+- [ ] Configure Firebase security rules for lobbies and users
+- [ ] Set up environment variables for production secrets
+- [ ] Deploy to Vercel (frontend) with Firebase backend
+- [ ] Monitor Firebase usage and optimize as needed
+
+---
+
+> **Tip:** Only move to the next section after completing all items in the current section. Refer to @farkle.mdc for game-specific logic and rules.
+
+## Firebase Data Structure
+
+```
+/apps
+  /frontend      # Next.js frontend (main app)
+/libs
+  /shared        # Shared types, utilities, and components (currently empty)
+  /api           # Shared API and schema management (currently empty)
+  /database      # PostgreSQL ORM setup (currently empty)
+/public          # Static assets (SVGs, etc.)
+/src/lib/utils.ts # Utility function used by ShadCN UI (see below)
+```
+
+  /database      # PostgreSQL ORM setup (currently empty)
+/public          # Static assets (SVGs, etc.)
+/src/lib/utils.ts # Utility function used by ShadCN UI (see below)
+```

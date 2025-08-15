@@ -22,14 +22,6 @@ export const navItems: NavItem[] = [
     items: [] // Empty array as there are no child items for Dashboard
   },
   {
-    title: 'Product',
-    url: '/dashboard/product',
-    icon: 'product',
-    shortcut: ['p', 'p'],
-    isActive: false,
-    items: [] // No child items
-  },
-  {
     title: 'Account',
     url: '#', // Placeholder as there is no direct link for the parent
     icon: 'billing',
@@ -51,12 +43,31 @@ export const navItems: NavItem[] = [
     ]
   },
   {
-    title: 'Kanban',
-    url: '/dashboard/kanban',
-    icon: 'kanban',
-    shortcut: ['k', 'k'],
+    title: 'Farkle',
+    url: '/dashboard/farkle',
+    icon: 'kanban', // Replace with 'dice' if you add a dice icon to Icons
+    shortcut: ['f', 'f'],
     isActive: false,
-    items: [] // No child items
+    items: []
+  },
+  {
+    title: 'Traffic',
+    url: '/dashboard/traffic',
+    icon: 'dashboard', // Replace with 'map' if you add a map icon to Icons
+    shortcut: ['t', 't'],
+    isActive: false,
+    items: [
+      {
+        title: 'Overview',
+        url: '/dashboard/traffic',
+        shortcut: ['t', 'o']
+      },
+      {
+        title: 'Map View',
+        url: '/dashboard/traffic/map',
+        shortcut: ['t', 'm']
+      }
+    ]
   }
 ];
 

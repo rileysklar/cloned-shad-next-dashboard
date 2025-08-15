@@ -1,0 +1,170 @@
+> Use this document as the technical reference for implementing Farkle logic in the app.
+🎲 FARKLE RULES — STRUCTURED FORMAT FOR AGENTIC AI
+1. OBJECTIVE
+Be the first player to reach 10,000 points (or an agreed-upon alternate score).
+
+Points are accumulated by rolling combinations with six 6-sided dice.
+
+2. GAME COMPONENTS
+6 standard six-sided dice.
+
+Score sheet and writing utensil.
+
+(Optional) Dice cup for each player.
+
+3. NUMBER OF PLAYERS
+Minimum: 2
+
+Recommended: 3–8
+
+4. TURN STRUCTURE (Clarified)
+Each player performs the following during their turn:
+
+Step 1: Roll all available dice (start with 6 dice).
+Step 2: Check for scoring combinations. (See Section 5)
+IMPORTANT: A roll must contain at least one scoring die (a 1 or a 5, or a scoring combination) — otherwise, the turn ends immediately as a Farkle.
+
+Step 3: Set aside at least one scoring die (1s, 5s, or valid combinations).
+You may choose to set aside only some scoring dice, not all.
+
+You must set aside at least one scoring die per roll to continue.
+
+Step 4: Choose one:
+Bank your accumulated points and end your turn, OR
+
+Reroll remaining dice and repeat steps 2–4.
+
+Step 5: Repeat until:
+You bank your score voluntarily, OR
+
+You roll no scoring dice (no 1s, no 5s, no valid combos) → this is a Farkle.
+
+Step 6: If no Farkle, add banked points to total score.
+Step 7: Pass the dice to the next player (clockwise).
+💥 DEFINITION: FARKLE
+A Farkle occurs any time a player rolls the dice and does not roll any scoring dice (i.e. no 1s, no 5s, no three-of-a-kind, no straight, etc.).
+
+When a player Farkles:
+
+Their entire score for that turn is lost (even if points were previously accumulated).
+
+The turn ends immediately.
+
+The dice pass to the next player.
+
+Rule Reminder for Agents: A player must roll at least one 1 or 5 (or other scoring combination) on every roll to avoid a Farkle and continue their turn.
+
+
+Step 1: Roll all six dice.
+Step 2: Check for scoring combinations. (See section 5)
+Step 3: Set aside at least one scoring die (optional to set aside all).
+Step 4: Choose:
+Roll remaining dice, OR
+
+Bank points and end turn.
+
+Step 5: Repeat steps 1–4 until:
+Player banks points voluntarily.
+
+Farkle: Player rolls and no scoring dice appear, losing all unbanked points from that turn.
+
+Step 6: Add banked points to total score.
+Step 7: Pass dice clockwise to next player.
+Special Case:
+If all six dice score (“Hot Dice”), player may reroll all six and continue turn.
+
+5. SCORING SYSTEM
+🔹 BASIC SCORING (Single Roll Only)
+Dice Combo	Points
+Single 1	100
+Single 5	50
+Three 1s	1,000
+Three 2s	200
+Three 3s	300
+Three 4s	400
+Three 5s	500
+Three 6s	600
+1–2–3–4–5–6	3,000
+Three pairs	1,500
+
+Note: All scoring combos must occur in the same single roll to count.
+
+6. WINNING THE GAME
+First player to score ≥10,000 points during their turn wins.
+
+(Optional) Must end turn with 10,000+ to win.
+
+(Optional Variant): Must score exactly 10,000 or the excess is given to lowest scorer (“Welfare” rule).
+
+7. RULE VARIANTS
+🧮 SCORING VARIATIONS
+Variant Type	Value
+3 Pairs	500 / 600 / 750 / 1000 / 1500
+4-of-a-kind	2x or 4x value of 3-of-a-kind / 1000
+5-of-a-kind	3x or 6x value of 3-of-a-kind / 2000
+6-of-a-kind	4x or 8x value of 3-of-a-kind / 3000 / Win
+Two Triplets	2500
+Straight	0 / 1200 / 1500 / 2000 / 2500
+Three 1s (alt scoring)	300 ("Pocket Farkle")
+
+🛠️ OPTIONAL GAME RULE VARIATIONS
+Rule Name	Description
+Opening Score	Must score minimum (e.g. 500) to bank initial points. Alternate options: 350, 400, 600, 1000.
+Higher/Lower Target	Win condition may be 5000, 20,000, etc.
+Hot Dice Mandatory Roll	Must reroll all 6 after scoring all six.
+Hot Dice Bonus	Earn 1000 extra if all six dice score again.
+Three Farkles Rule	3 consecutive Farkles = -1000 points.
+Toxic Twos	4+ twos ends turn and clears score for that turn.
+No 5s Rule	Remove single 5s from scoring (increases difficulty).
+High Stakes (Greed)	Use previous player's leftover dice for potential bonus.
+Welfare Rule	Must land exactly on 10,000. Overshooting sends all turn points to lowest scorer.
+Five Dice Variant	Game played with 5 dice (eliminates certain combos).
+Team Farkle	Team play with combined score, 20,000 target.
+Speed Farkle	30-second turn timer per player.
+
+8. STRATEGY MODULES
+📈 Basic Tactics
+Prioritize:
+
+Three 1s (1000 pts)
+
+Straights (3000 pts)
+
+Three pairs (1500 pts)
+
+Avoid:
+
+Rerolling with just 1 or 2 dice unless necessary.
+
+Always:
+
+Bank your score if the risk of Farkling is high.
+
+Consider opponent scores when deciding to push forward.
+
+⚠️ Risk Management
+Calculate risk based on remaining dice.
+
+Always compare potential gain vs. possibility of bust (Farkle).
+
+Use Hot Dice wisely — big opportunity, big risk.
+
+9. PLAYER ETIQUETTE
+Behavior	Best Practice
+Respect others	Encourage, avoid gloating or arguing.
+Clarity	Explain rules, speak respectfully.
+Fair play	Honor rules, don’t cheat.
+Time awareness	Play timely, avoid delays.
+
+10. LEARNING & ADAPTATION TIPS FOR NEW AGENTS
+Understand scoring before playing.
+
+Start cautiously, then take more risks as needed.
+
+Use opponent’s score state to dictate aggression.
+
+Adapt and learn probability of dice outcomes.
+
+
+Adapt and learn probability of dice outcomes.
+

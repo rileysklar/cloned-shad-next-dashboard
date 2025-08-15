@@ -23,6 +23,7 @@
     ]
   },
   "dependencies": {
+    "@clerk/clerk-sdk-node": "^5.1.6",
     "@clerk/nextjs": "^6.12.12",
     "@clerk/themes": "^2.2.26",
     "@dnd-kit/core": "^6.3.1",
@@ -68,9 +69,11 @@
     "date-fns": "^4.1.0",
     "eslint": "8.48.0",
     "eslint-config-next": "15.1.0",
+    "firebase": "^12.0.0",
     "input-otp": "^1.4.2",
     "kbar": "^0.1.0-beta.45",
     "lucide-react": "^0.476.0",
+    "mapbox-gl": "^3.14.0",
     "match-sorter": "^8.0.0",
     "motion": "^11.17.0",
     "next": "15.3.2",
@@ -100,6 +103,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^9.3.0",
+    "@types/mapbox-gl": "^3.4.1",
     "@types/node": "22.10.2",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2",
