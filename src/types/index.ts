@@ -34,10 +34,10 @@ export type MainNavItem = NavItemWithOptionalChildren;
 
 export type SidebarNavItem = NavItemWithChildren;
 
-// Re-export traffic types
+// Re-export arc types
 export type {
-  TrafficIncident,
-  TrafficIncidentLocation,
-  TrafficIncidentFilters,
-  TrafficIncidentResponse
-} from './traffic';
+  arcIncident,
+  arcIncidentLocation,
+  arcIncidentFilters,
+  arcIncidentResponse
+} from './arc';
